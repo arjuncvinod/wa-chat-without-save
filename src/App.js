@@ -9,7 +9,7 @@ const [no,setNo]=useState("")
   return (
     <main>
     <div className='header'>
-     <img src="wa.png" />
+     <img src="wa.png" alt=''/>
       <h1> Chat without saving the contact</h1>
     </div>
     <div className='container'>
