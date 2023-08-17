@@ -9,7 +9,7 @@ const [no,setNo]=useState("")
   return (
     <main>
     <div className='container'>
-      <input type="text" onChange={handleChange} />
+      <input type="text" onChange={handleChange} placeholder='Enter the number'/>
       <a href={`https://wa.me/+91${no}`}>
         <button>Chat</button>
       </a>
