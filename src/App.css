@@ -2,34 +2,67 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 main{
   height: 100vh;
   width: 100vw;
   background-color: rgb(234, 233, 233);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
-.container{
+.header{
+  width: 100vw;
+  height: 50vh;
+  font-size: .8rem;
+  text-align: center;
+  color: #128C7E;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  gap:30px;
+  /* background-color:red */
 }
+.header img{
+  width: 100px;
+}
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  padding-top: 100px;
+}
+
 .container input{
-  width: 280px;
-  height: 35px;
+  width: 300px;
+  height: 50px;
   outline: none;
   border: none;
   border-radius: 10px;
   padding: 10px;
+  font-size: 1rem;
+}
+.container input:focus{
+  outline: 2px solid #128C7E;
+}
+.container input::placeholder{
+  color: #128C7E;
 }
 .container button{
-  padding: 10px 30px;
+  margin-top: 10px;
+  padding: 10px 50px;
   font-size: 1.1rem;
   border-radius: 10px;
   border: none;
-  background-color: green;
+  background-color: #128C7E;
   color: white;
+}
+.container button:hover{
+  background-color: #11796d;
 }
