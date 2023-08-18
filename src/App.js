@@ -2,7 +2,13 @@ import './App.css';
 import React,{useState} from 'react';
 
 function App() {
+const [countryCode,setcode]=useState("+91")
 const [no,setNo]=useState("")
+
+  function setCountry(e){
+    setcode(e.target.value)
+  }
+
   function handleChange(e){
    setNo(e.target.value);
   }
@@ -10,12 +16,15 @@ const [no,setNo]=useState("")
     <main>
     <div className='header'>
      <img src="wa.png" alt=''/>
-      <h1> Chat without saving the contact</h1>
+      <h1> Chat without saving the number</h1>
     </div>
     <div className='container'>
-    
+      <div>
+      
+      <input type="text" onChange={setCountry} value={countryCode}/>
       <input type="text" onChange={handleChange} placeholder='Enter the number'/>
-      <a href={`https://wa.me/+91${no}`}>
+      </div>
+      <a href={`https://wa.me/${countryCode}${no}`}>
         <button>Chat</button>
       </a>
       </div>
