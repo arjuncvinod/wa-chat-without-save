@@ -78,3 +78,27 @@ main{
 .container button:hover{
   background-color: #11796d;
 }
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copyright p{
+    color: gray;
+    font-size: small;
+}
+.copyright .made{
+    position: relative;
+    bottom: 1;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: inherit;
+    color:  #128C7E;
+    font-weight: bold;
+}
+.made a{
+    color: inherit;
+    text-decoration: none;
+}
