@@ -32,7 +32,7 @@ const [no,setNo]=useState("")
         </a>
       </div>
       <div class="copyright">
-        <p class="made">Made with 💚 by <a href='https://arjuncvinod.netlify.app'>Arjun</a></p>
+        <p class="made">Designed & Built by <a href='https://arjuncvinod.netlify.app'>Arjun</a></p>
         <p>
           Copyright &copy; 2023
         </p>
