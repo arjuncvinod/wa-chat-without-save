@@ -4,7 +4,6 @@ import React,{useState} from 'react';
 function App() {
 const [countryCode,setcode]=useState("+91")
 const [no,setNo]=useState("")
-
   function setCountry(e){
     setcode(e.target.value)
   }
@@ -20,9 +19,9 @@ const [no,setNo]=useState("")
       </div>
       <div className="container">
         <div>
-          <input type="text" onChange={setCountry} value={countryCode} />
+          <input type="tel" onChange={setCountry} value={countryCode} />
           <input
-            type="text"
+            type="number"
             onChange={handleChange}
             placeholder="Enter the number"
           />
