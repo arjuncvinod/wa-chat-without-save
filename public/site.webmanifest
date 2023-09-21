@@ -1,0 +1,7 @@
+{
+  "name": "Chat-Without-Save",
+  "short_name": "WaChat",
+  "theme_color": "#EEF0F4",
+  "background_color": "#EEF0F4",
+  "display": "standalone"
+}
